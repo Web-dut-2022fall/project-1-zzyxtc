@@ -7,7 +7,7 @@
 {% block body %}
 
 <h1>Create New Page</h1>
-<form action="{% url 'CreateNewPage' %}" method = "POST">
+<form action="{% url 'createNewPage' %}" method = "POST">
     {% csrf_token %}
     <textarea name="Ntitle" style=" height: 30px;" placeholder="TITLE">{{ vTitle }}</textarea>
     <p style="color: red;">{{ errorMessage }}</p>
